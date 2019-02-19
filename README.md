@@ -5,8 +5,6 @@ The user will need to wire up a USB audio device in a voltage divider configurat
 
 TWO FILES ARE PRESENT AND FUNCTION AS FOLLOWS:
 
-1. thiele_small_resonance_sweep.py
-
----- This file uses an input frequency sweep to approximate the frequency and impedance of the resonance of a loudspeaker
+1. thiele_small_resonance_sweep.py - This file uses an input frequency sweep to approximate the frequency and impedance of the resonance of a loudspeaker
   
 2. 
