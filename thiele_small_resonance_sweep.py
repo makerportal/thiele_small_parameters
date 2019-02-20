@@ -130,10 +130,11 @@ ax.set_xlabel('Frequency [Hz]',fontsize=16)
 peak_width = 70.0 # approx width of peak in Hz
 ax.set_xlim([f_max-(peak_width/2.0),f_max+(peak_width/2.0)])
 ax.set_ylim([np.min(Z_mean[f_min_loc:f_max_loc]),np.max(Z_mean[f_min_loc:f_max_loc])+0.5])
+ax2.set_xlim([f_max-(peak_width/2.0),f_max+(peak_width/2.0)])
 ax2.set_ylim([-45,45])
-ax.set_xticks([])
-ax.set_xticklabels([])
+ax.set_xticks([],minor=True)
 ax2.set_xticks(np.arange(f_max-(peak_width/2.0),f_max+(peak_width/2.0),10))
+ax2.set_xticklabels(['{0:2.0f}'.format(ii) for ii in np.arange(f_max-(peak_width/2.0),f_max+(peak_width/2.0),10)])
 
 # locating phase and Z maximums to annotate the figure
 Z_max_text = ' = {0:2.1f} $\Omega$'.format(np.max(Z_mean[f_min_loc:f_max_loc]))
